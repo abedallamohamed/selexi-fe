@@ -1,36 +1,36 @@
-# Selexi Frontend
+# Selexi Inventory Frontend App
 
-Applicazione Vue 3 + Vite con Docker.
+Vue 3 + Vite application with Docker.
 
-## Configurazione
+## Configuration
 
-### Variabili d'Ambiente
+### Environment Variables
 
-L'applicazione utilizza le seguenti variabili d'ambiente:
+The application uses the following environment variables:
 
-- `VITE_API_BASE_URL`: URL base per le API backend (default: `http://localhost:8000`)
+- `VITE_API_BASE_URL`: Base URL for the backend APIs (default: `http://localhost:8000`)
 
-Per configurare le variabili d'ambiente, crea un file `.env` nella root del progetto:
+To configure environment variables, create a `.env` file in the project root:
 
 ```bash
 VITE_API_BASE_URL=http://localhost:8080
 ```
 
-**Nota**: Se non viene specificata, l'applicazione utilizzerà il valore di default configurato in `src/services/httpService.ts`.
+**Note**: If not specified, the application will use the default value configured in `src/services/httpService.ts`.
 
-## Setup e Avvio
+## Setup and Launch
 
 ```bash
-# Avvia l'applicazione
+# Start the application
 docker compose up -d --build
 
-# Visualizza i log
+# View logs
 docker logs selexi-fe
 
-# Ferma l'applicazione
+# Stop the application
 docker compose down
 ```
 
-## Accesso
+## Access
 
-- Applicazione: http://localhost:5173
+- Application: http://localhost:5173
